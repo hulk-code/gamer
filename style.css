@@ -156,7 +156,7 @@ margin-right: 10px;
    width: 19rem;
 }
    
-.play-btn-photo{
+.play-btn-photo {
    position: relative;
    display: inline-block;
 }
@@ -169,21 +169,20 @@ margin-right: 10px;
    
   
 }
+.play-btn-photo:hover {
+   opacity: .5;
+}
 .play-btn-title{
-   color: #dc0f9b;
-   
+   color: black;
    font: bold;
    font-weight: 700;
    font-size: 1.2rem;
-
-   
 }
+   
 .play-btn-photo:hover .play-btn-container {
    display: block;
+   
 }
-
-
-
 .play-online-container{
    display: flex;
    justify-content: center;
@@ -217,7 +216,6 @@ margin-right: 10px;
    align-items: center;
    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
    margin-bottom: 4rem;
-   
 }
 .carrer-details-container{
    margin-left: 4rem;
@@ -225,10 +223,7 @@ margin-right: 10px;
 .carrer-details-container h1{
    color: azure;
 }
-/* .carrers-photo{
-   width: 60%;
 
-} */
 .carrers-photo img{
    width: 50rem;
 }
@@ -236,7 +231,6 @@ margin-right: 10px;
    color: white;
    font-size: 1rem;
    font-weight: 600;
-
 }
 #carrer-details{
    font-size: .7rem;
@@ -246,240 +240,248 @@ margin-right: 10px;
    padding: .5rem;
    border-radius: 1rem;
 }
-.find-ur-game-section span{
+.find-ur-game-section button{
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 1rem;
-
-
+   /* gap: 1rem; */
+   border: none;
+   background:none;
 }
 .find-ur-game-section {
    display: grid;
    grid-template-columns: repeat(5, 1fr);
    justify-items: center;
    align-items: center;
-   grid-gap: 10px;
-   text-align: center;
+   row-gap: 2rem;
    margin-bottom: 3rem;
  }
- .find-ur-game-section span{
-
-   border: 1px solid transparent;
- }
-
-
-.find-ur-game-section span:hover{
-   border: 1px solid blueviolet;
-   border-radius: 3rem;
-   color: #dc0f9b;
-   padding: .2rem;
-}
-.find-us-details{
-   background: #0B0223;
-   
-}
-.find-us-title{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding-top: 5rem;
-   gap: 1rem;
-  
-}
-.find-us-title p{
-   color: white;
-   font-weight: 900;
-   font-size: 30px;
-}
-.find-us-title img{
-   height: 30px;
-}
-.find-us-title span{
-   color: #dc0f9b;
-}
-.link{
-   text-align: center;
-   
-}
-.link a{
-   color: antiquewhite;
-   text-decoration: none;
-   margin-right: 5rem;
-   
-}
-.social-account{
-   text-align: center;
-   margin-top:20px
-}
-.social-account a{
-   margin-right: 3rem;
-
-}
-.social-account a img{
-   height: 25px;
-}
-.Terms-and-Conditions{
-   text-align: center;
-   margin-top: 2rem;
-   
-}
-.Terms-and-Conditions a{
-   text-decoration: none;
-   color: rgba(255, 255, 255, 0.60);
-   font-weight: 500;
-   margin-left: 3rem;
-   
-}
-.last-part{
-   color: rgba(255, 255, 255, 0.60);
-   margin-top: 3rem;
-   text-align: center;
-   padding-bottom: 3rem;
-}
-
-
-@media only screen and (max-width: 640px) {
-           /* flex nav */
-           .nav-container{
-            display: flex;
-            flex-direction: column; 
-            justify-content: center;
-         }
-         .nav-item{
-            display: flex;
-           flex-direction:column;
-           justify-content: center; 
-         }
-         .contact-logo{
-            margin-right: 0rem;
-            
-         }
-         .nav-logo{
-            display: flex;
-            justify-content: center;
-            
-         }
-         .nav-logo img{
-            margin-left: 0;
-           
-         }
-         /* main section 1 responsive */
-         .banner-container{
-            display: flex;
-            flex-direction: column-reverse;
-            margin-top: 5rem;
-            justify-content: center;
-            padding-left: 4rem;
-            
-            
-            
-         }
-         .banner-photo img{
-              width: 80%;
-            
-         }
-         .banner-content{
  
-          
-            margin-left: 0;
-         }
-         /* main section 2 resp */
-         .know-more-container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-         }
-         .featured-img img{
-            width: 80%;
-            padding-left: 3rem;
-
-         }
-         .know-more{
+ .find-ur-game-section button:hover{
+    border: 1px solid blueviolet;
+    border-radius: 3rem;
+    color: #dc0f9b;
+    padding: .2rem;
+    
+ }
+ .find-us-details{
+    background: #0B0223;
+    
+ }
+ .find-us-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 1rem;
+   }
    
-            text-align: center;
-            padding-left: 0rem;
-         }
-         /* main section 3 respn */
-         .collection-img-container{
-            display: flex;
-            justify-content: center;
-            flex-direction: column; 
-           padding-left: 2.5rem;
-         }
-         /* section 4 resp */
-         .bannar-photo img{
-            width: 80%;
-         }
-         .play-online-container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-         }
-         .play-online-img{
-            position: relative;
-            padding-left: 4rem;
-         }
-         .bannar-mini-photo{
-            position: absolute;
-            top: 10rem ;
-            left: 1rem;
+   
+ .find-us-title p{
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+ }
+ .find-us-title img{
+    height: 30px;
+ }
+ .find-us-title span{
+    color: #dc0f9b;
+ }
+ .link{
+    text-align: center;
+    
+ }
+ .link a{
+    color: antiquewhite;
+    text-decoration: none;
+    margin-right: 5rem;
+    
+ }
+ .social-account{
+    text-align: center;
+    margin-top:20px
+ }
+ .social-account a{
+    margin-right: 3rem;
+   }
+ 
+ .social-account a img{
+    height: 25px;
+ }
+ .Terms-and-Conditions{
+    text-align: center;
+    margin-top: 2rem;
+   }
+   .Terms-and-Conditions a{
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.60);
+      font-weight: 500;
+      margin-left: 3rem;
+     }
+     .last-part{
+        color: rgba(255, 255, 255, 0.60);
+        margin-top: 3rem;
+        text-align: center;
+        padding-bottom: 3rem;
+     }
+    
+     @media only screen and (max-width: 640px) {
+                /* flex nav */
+                .nav-container{
+                 display: flex;
+                 flex-direction: column; 
+                 justify-content: center;
+              }
+              .nav-item{
+                 display: flex;
+                flex-direction:column;
+                justify-content: center; 
+              }
+              .contact-logo{
+                 margin-right: 0rem;
+                 
+              }
+              .nav-logo{
+                 display: flex;
+                 justify-content: center;
+                 
+              }
+              .nav-logo img{
+                 margin-left: 0;
+                
+              }
+              /* main section 1 responsive */
+              .banner-container{
+                 display: flex;
+                 flex-direction: column-reverse;
+                 margin-top: 5rem;
+                 justify-content: center;
+                 padding-left: 4rem;
+              }
+                 
+                 
+              .banner-photo img{
+                   width: 80%;
+                 
+              }
+              .banner-content{
+      
+               
+                 margin-left: 0;
+              }
+              /* main section 2 resp */
+              .know-more-container{
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+              }
+              .featured-img img{
+                 width: 80%;
+                 padding-left: 3rem;
+     
+              }
+              .know-more{
+        
+                 text-align: center;
+                 padding-left: 0rem;
+              }
+              /* main section 3 respn */
+              .collection-img-container{
+                 display: flex;
+                 justify-content: center;
+                 flex-direction: column; 
+                padding-left: 2.5rem;
+              }
+              /* section 4 resp */
+              .bannar-photo img{
+                 width: 80%;
+              }
+              .play-online-container{
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+                 gap: 2rem;
+              }
+              .play-online-img{
+                 position: relative;
+                 padding-left: 4rem;
+              }
+              .bannar-mini-photo{
+                 position: absolute;
+                 top: 10rem ;
+                 left: 1rem;
+              }
+              .bannar-mini-photo img{
+                width: 10rem;
+     
+              }
+              .carrers-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+                margin-bottom: 4rem;
+                
+             }
+             .carrers-photo img{
+                width: 25rem;
+                margin-left: 4rem;
+             }
+             .find-ur-game-section {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                justify-items: center;
+                align-items: center;
+                grid-gap: 10px;
+                text-align: center;
+              }
+              .find-ur-game-section button img{
+                width: 2rem;
+              }
+              .link{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 1rem;
+                /* margin-bottom: 2rem; */
+              }
+              .social-account{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                text-align: center;
+                margin-top:20px;
+                gap: 1rem;
+             }
+             .find-us-details{
+                width: 100%;
+             }
+             .Terms-and-Conditions{
+                
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 1rem;
+             }
+                 
+
+   
+
+
+
+   
+
+
+    
+
+
+  
+
+
+
             
             
          
-         }
-          .bannar-mini-photo img{
-            width: 10rem;
-
-          }
-          .carrers-container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-            margin-bottom: 4rem;
-            
-         }
-         .carrers-photo img{
-            width: 25rem;
-            margin-left: 4rem;
-         }
-         .find-ur-game-section {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-items: center;
-            align-items: center;
-            grid-gap: 10px;
-            text-align: center;
-          }
-          .find-ur-game-section span img{
-            width: 2rem;
-          }
-          .link{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 1rem;
-            /* margin-bottom: 2rem; */
-          }
-          .social-account{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            text-align: center;
-            margin-top:20px;
-            gap: 1rem;
-         }
-         .find-us-details{
-            width: 100%;
-         }
-         .Terms-and-Conditions{
-            
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 1rem;
-         }
         
             
             
